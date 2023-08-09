@@ -20,7 +20,7 @@
 <body>
     <div class="container">
         <div class="row">
-            <form action="/put-crud" method="PUT">
+            <form action="/put-crud" method="POST">
                 <div class="form-row">
                     <div class="col-12 mt-3"><b>Edit User's Information:</b></div>
                     <div class="form-group col-md-6">
@@ -39,7 +39,7 @@
                     <input type="text" class="form-control" name="address" placeholder="1234 Main St"
                         value="<%= user.address %>">
                 </div>
-
+                <input name="id" value="<%= user.id %>" type="text" hidden>
                 <button type="submit" class="btn btn-primary">Update</button>
             </form>
         </div>
